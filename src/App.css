@@ -36,3 +36,256 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+body {
+  font-family: "rokkitt", serif;
+  background-color: rgba(26, 245, 195, 0.25); }
+
+h1 {
+  font-family: "rochester", cursive;
+  color: black; }
+
+h2, h3 {
+  font-family: "rochester", cursive;
+  color: black;
+  text-shadow: 2px 2px #1af5c3;
+  font-size: 3rem; }
+
+h4 {
+  font-family: "rochester", cursive;
+  color: black;
+  text-shadow: 2px 2px #1af5c3;
+  font-size: 2rem; }
+
+h5 {
+  font-family: "rochester", cursive;
+  color: black;
+  text-shadow: 2px 2px #1af5c3;
+  font-size: 2rem; }
+
+h6 {
+  font-family: "rokkitt", serif;
+  font-size: 1.5rem; }
+
+p {
+  font-family: "rokkitt", serif;
+  font-size: 1.5rem; }
+
+.site-footer p {
+  font-family: "rokkitt", serif;
+  font-size: 1rem; }
+
+.site-footer {
+  background-image: linear-gradient(to bottom, white, #1af5c3);
+  padding: 20px 0; }
+
+.jumbotron h1 {
+  color: black;
+  font-family: "rokkitt", serif;
+  font-size: 3.5rem;
+  text-align: right; }
+
+.jumbotron {
+  background-image: linear-gradient(to top, white, #1af5c3);
+  }
+
+.jumbotron img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; }
+
+.jumbotron span {
+  font-family: "rochester", cursive;
+  color: black;
+  text-shadow: 2px 2px #1af5c3; }
+
+#button {
+  background-color: #1af5c3;
+  color: black; }
+
+#thickHR {
+  margin: 0;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  background-image: radial-gradient(#1af5c3 20%, black 20%);
+  background-position: 0 0;
+  background-size: 20px 20px; }
+
+#thinHR {
+  margin: 0;
+  padding: 3px;
+  background-color: black;
+  color: white;
+  background-image: radial-gradient(#1af5c3 20%, black 20%);
+  background-position: 0 0;
+  background-size: 8px 8px;
+  width: 85%;
+  height: 1px;
+  border-radius: 5px; }
+
+.text-responsive {
+  font-size: calc(30% + 1vw + 1vw); }
+
+.navbar {
+  background-color: #1af5c3; }
+
+.nav-link {
+  font-family: "rokkitt", serif;
+  font-size: 2rem;
+  padding: 0 20px;
+  color: white;
+}
+
+.nav-link.active {
+  color: black; 
+}
+
+.nav-link.hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.55); }
+
+@media screen and (max-width: 575px) {
+  .col-form-label {
+    text-align: left; } }
+
+@media screen and (min-width: 576px) {
+  .nav-item {
+    font-family: "rokkitt", serif;
+    font-size: 1.5rem;
+    padding: 0 10px;
+    color: white; }
+  h4 {
+    font-family: "rochester", cursive;
+    color: black;
+    text-shadow: 1px 1px #1af5c3;
+    font-size: 1rem; }
+  #map {
+    width: 50%;
+    height: 50%; }
+  .col-form-label {
+    text-align: left; } }
+
+@media screen and (min-width: 992px) {
+  .nav-item {
+    font-family: "rokkitt", serif;
+    font-size: 2rem;
+    padding: 0 20px;
+    color: white; }
+  h4 {
+    font-family: "rochester", cursive;
+    color: black;
+    text-shadow: 1px 1px #1af5c3;
+    font-size: 2rem; } }
+
+@media screen and (min-width: 1200px) {
+  .nav-item {
+    font-family: "rokkitt", serif;
+    font-size: 2rem;
+    padding: 0 40px;
+    color: white; } }
+
+.row-content {
+  padding: 50px 0;
+  min-height: 200px; }
+
+a, a:hover {
+  color: inherit;
+  text-decoration: none; }
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.55); }
+
+.carousel {
+  border: solid #1af5c3; }
+
+.carousel h3 {
+  color: #1af5c3; }
+
+.card p {
+  font-family: "quicksand", sans-serif; }
+
+.card-header {
+  border-color: #1af5c3;
+  border-width: 5px; }
+
+.card-footer {
+  border-color: #1af5c3;
+  border-width: 5px; }
+
+.ul li {
+  font-family: "rokkit", serif;
+  color: black;
+  font-size: 2rem; }
+
+.form-control {
+  font-family: "rokkitt", serif; }
+
+#love {
+  font-family: "rochester", cursive;
+  color: black;
+  text-shadow: 1px 1px #1af5c3; }
+
+p span {
+  font-family: "rochester", cursive;
+  color: black;
+  text-shadow: 2px 2px #1af5c3;
+  font-size: 2rem; }
+
+#accordion p {
+  font-family: "rokkitt", serif;
+  font-size: 20px; }
+
+#accordion span {
+  font-family: "rokkitt", serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: none; }
+
+#accordion h5 {
+  font-family: "rochester", cursive;
+  font-size: 1.5rem;
+  color: black;
+  text-shadow: none; }
+
+.thumbnail .caption {
+  font-family: "rokkitt", serif;
+  color: rgba(0, 0, 0, 0.55);
+  font-size: 1rem; }
+
+#menu p {
+  font-family: "rokkitt", serif;
+  font-size: 1rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 2px;
+  margin-right: 2px; }
+
+.row-content-menu {
+  padding: 25px 0;
+  min-height: 200px; }
+
+.modal .modal-header {
+  background-image: linear-gradient(to top, white, #1af5c3);
+  padding-bottom: 0;
+  margin-bottom: 0; }
+
+.modal .modal-body {
+  background-color: rgba(26, 245, 195, 0.25);
+  line-height: 24px; }
+
+.modal .modal-footer {
+  background-image: linear-gradient(to bottom, white, #1af5c3); }
+
+#aboutUs p {
+  font-family: "rokkitt", serif;
+  font-size: 1.5rem;
+  line-height: 30px; }
+
+.breadcrumb {
+  background-color: rgba(26, 245, 195, 0.25); }
+
+

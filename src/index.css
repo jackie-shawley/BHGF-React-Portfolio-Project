@@ -48,8 +48,7 @@ p {
 
 .jumbotron {
   background-image: linear-gradient(to top, white, #1af5c3);
-  margin: 0px;
-  padding: 40px 0px 0px 0px; }
+  }
 
 .jumbotron img {
   display: block;
@@ -93,16 +92,18 @@ p {
 .navbar {
   background-color: #1af5c3; }
 
-.nav-item {
+.nav-link {
   font-family: "rokkitt", serif;
   font-size: 2rem;
   padding: 0 20px;
-  color: white; }
+  color: white;
+}
 
-.nav-item.active a {
-  color: black; }
+.nav-link.active {
+  color: black; 
+}
 
-.nav-item a:hover {
+.nav-link.hover {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.55); }
 
@@ -245,3 +246,5 @@ p span {
 
 .breadcrumb {
   background-color: rgba(26, 245, 195, 0.25); }
+
+

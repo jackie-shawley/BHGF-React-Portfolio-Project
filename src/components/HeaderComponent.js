@@ -3,6 +3,8 @@ import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron }
 import { NavLink } from 'react-router-dom';
 import logo from '../images/logos etc/5 Be Happily Gluten Free Logo transparent.png';
 import flower from '../images/logos etc/white flower.png';
+import AboutUs from './AboutComponent';
+
 
 
 export default class Header extends Component {
@@ -24,14 +26,14 @@ export default class Header extends Component {
     render () {
         return (
             <React.Fragment>
-                <Jumbotron fluid>                
+                <Jumbotron fluid className="mb-n5">                
                     <div className="container">
                         <div className="row">
                             <div className="col-12 col-md-3 d-none d-md-block pl-5 mt-5 text-md-right text-nowrap">
                                 <a role="button" id="button" className="btn btn-dark btn-sm" data-toggle="modal" data-target="#mailListModal">Join Our Email List!</a>
                             </div>
-                            <div className="col-12 col-md-6 img-container">
-                                <a href="index.html">
+                            <div className="col-12 col-md-6">
+                                <a href='/home'>
                                     <img src={logo} className="img-fluid mx-auto d-block" alt="Be Happily Gluten Free Logo" />
                                 </a>                      
                             </div>
@@ -48,21 +50,29 @@ export default class Header extends Component {
                             </div>
                         </div>
                     </div>
-                    <hr id="thickHR"></hr>
+                    <hr id="thickHR" className="mb-n3" />
                 </Jumbotron>
 
                 <Navbar sticky="top" expand="md">
-                    <div className="container d-flex">
-                        <NavbarBrand href='./'><img src={ flower } height="50" width="50" /></NavbarBrand>
+                    <div className="container mt-n1">
+                        <NavbarBrand href='./'><img src={ flower } height="50" width="50" alt="white flower" /></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="/home" /> Home
-                                    <NavLink className="nav-link" to="/menu" /> Menu
-                                    <NavLink className="nav-link" to="/ingredients" /> Ingredients
-                                    <NavLink className="nav-link" to="/aboutus" /> About Us
-                                    <NavLink className="nav-link" to="/contact" /> Contact
+                                    <NavLink activeClassName='active' className='nav-link' to='/home'>Home</NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink activeClassName='active' className='nav-link' to='/menu'>Menu</NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink activeClassName='active' className='nav-link' to='/ingredients'>Ingredients</NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink activeClassName='active' className='nav-link' to='/aboutus'>About Us</NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink activeClassName='active' className='nav-link' to='/contact'>Contact</NavLink>
                                 </NavItem>
                             </Nav>
                         </Collapse>
@@ -72,3 +82,4 @@ export default class Header extends Component {
         );
     }
 }
+
