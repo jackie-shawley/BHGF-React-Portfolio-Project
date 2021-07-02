@@ -3,10 +3,10 @@ import styled from 'styled-components';
 import { IconContext } from 'react-icons';
 import { AccordionData } from './AccordionData';
 import { FiPlus, FiMinus } from 'react-icons/fi';
-import { black } from 'chalk';
+import { Accordion, Card, Button  } from 'react-bootstrap';
 import 'typeface-rokkitt';
 import 'typeface-rochester';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -16,24 +16,29 @@ const AccordionSelection = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: relative;    
     height: 100vh;
-    background: rgba(000);
+    background: #ffffff;
     `;
 
 const Container = styled.div`
     position: absolute;
-    top: 10%;
-    box-shadow: 2px 10px 35px 1px rgba(26 245 195 .3)`;
+    width: 90%;
+    top:0%;
+    box-shadow: 2px 10px 35px 1px rgba(0 0 0 0)`;
 
 const Wrap = styled.div`
+    background: #0 0 100;
+    color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    text-align: center;
     cursor: pointer;
 
     h1 {
+        padding: 2rem;
         font-family: "rochester", cursive;
         font-size: 2rem;
         color: black;
@@ -61,12 +66,20 @@ const Wrap = styled.div`
 
 
 
-const Dropdown = styled.div``;
+const Dropdown = styled.div`
+    background: #1af5c3;
+    color: #00ffb9;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #00ffb9;
+    border-top: 1px solid #00ffb9;    
+`;
 
     
-
-
-
 
 
 const IngredientsAccordion = () => {
@@ -81,10 +94,31 @@ const IngredientsAccordion = () => {
         setClicked(id)
     }
 
+    const CookieItems = AccordionData.filter(item => item.type === 'Cookies');
+    const CakeItems = AccordionData.filter(item => item.type === "Cake");
+    const MuffinItems = AccordionData.filter(item => item.type === 'Muffins');
+    const BreadItems = AccordionData.filter(item => item.type === 'Muffins')
+
     return (
-        <IconContext.Provider value={{ color: '#1af5c3', size: '25px' }}>
+        <IconContext.Provider value={{ color: '#1af5c3', size: '15px' }}>
             <AccordionSelection>
                 <Container>
+                    {AccordionData.map((item, type) => {
+                        return (
+                            <React.Fragment>
+                                <Wrap onClick={() => toggle(type)} key={type}>
+                                    <h1>{item.type}</h1>
+                                    <span>{clicked === type ? <FiMinus /> : <FiPlus />}</span>
+                                </Wrap>
+                                {clicked === type ? (
+                                    <Dropdown>                                 
+                                    {CookieItems}
+                                    
+                                </Dropdown>  
+                                ) : null}                        
+                            </React.Fragment>
+                        )
+                    })} 
                     {AccordionData.map((item, id) => {
                         return (
                             <React.Fragment>

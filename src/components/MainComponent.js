@@ -6,6 +6,7 @@ import Ingredients from './Ingredients/IngredientsComponent';
 import Contact from './ContactComponent';
 import AboutUs from './AboutComponent';
 import Menu from './MenuComponent';
+import Footer from './FooterComponent';
 
 
 
@@ -23,6 +24,7 @@ export default class Main extends Component {
                     <Route exact path='/contact' component={Contact} />
                     <Redirect to='/home' />
                 </Switch>
+                <Footer />
             </div>
         );
     }

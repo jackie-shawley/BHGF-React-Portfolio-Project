@@ -79,7 +79,9 @@ p {
 
 .site-footer {
   background-image: linear-gradient(to bottom, white, #1af5c3);
-  padding: 20px 0; }
+  padding: 20px 0 0 0;
+  
+ }
 
 .jumbotron h1 {
   color: black;
@@ -134,7 +136,9 @@ p {
   font-size: calc(30% + 1vw + 1vw); }
 
 .navbar {
-  background-color: #1af5c3; }
+  background-color: #1af5c3;
+ 
+}
 
 .nav-link {
   font-family: "rokkitt", serif;
@@ -147,7 +151,7 @@ p {
   color: black; 
 }
 
-.nav-link.hover {
+.nav-link:hover {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.55); }
 
@@ -169,8 +173,11 @@ p {
   #map {
     width: 50%;
     height: 50%; }
+
   .col-form-label {
-    text-align: left; } }
+    text-align: left; } 
+  
+  }
 
 @media screen and (min-width: 992px) {
   .nav-item {
@@ -254,7 +261,6 @@ p span {
 }
 
 #ownerPhoto {
-  margin-top: 25px;
   margin-bottom: 5px;
   width: 100%;
   height: 100%;
@@ -267,19 +273,36 @@ p span {
   font-size: 1.5rem;
   line-height: 25px;
   text-align: left;
-  margin-top: 25px;
   padding-right: 25px;
 
 }
 
+#menu p {  
+    font-family: "rokkitt", serif;
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-align: left;
+  
+}
 
-#menu p {
-  font-family: "rokkitt", serif;
-  font-size: 1rem;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 2px;
-  margin-right: 2px; }
+#menu h3 {
+  text-align: left;
+}
+
+#menu h6 {
+  text-align: left;
+}
+
+#menu {
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+ 
+
 
 .row-content-menu {
   padding: 25px 0;
