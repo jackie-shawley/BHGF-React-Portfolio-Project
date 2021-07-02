@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import Header from './HeaderComponent';
-import HomePage from './HomePageComponent';
-import Ingredients from './IngredientsComponent';
+import Header from './Header/HeaderComponent';
+import HomePage from './Home/HomePageComponent';
+import Ingredients from './Ingredients/IngredientsComponent';
 import Contact from './ContactComponent';
 import AboutUs from './AboutComponent';
 import Menu from './MenuComponent';
-import NewCarousel from './3DCarouselComponent';
+
+
 
 
 export default class Main extends Component {

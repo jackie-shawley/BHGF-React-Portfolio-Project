@@ -1,11 +1,7 @@
 import React, { Component } from "react";
 import Carousel from "react-spring-3d-carousel";
-import uuidv4 from "uuid";
 import { config } from "react-spring";
-import cookies from '../images/cookies/doggie cookies.jpeg';
-import ruffleCake from '../images/cakes/ruffle cake black background.png';
-import teaOnLinen from '../images/cafe/tea on linen resized.png';
-import circleOfDrinks from '../images/cafe/circle of drinks cropped.png'; 
+
 
 export default class NewCarousel extends Component {
     state = {
@@ -18,19 +14,19 @@ export default class NewCarousel extends Component {
     slides = [
       {
         key: 0,
-        content: <img src={ruffleCake} alt="Ruffle Cake" />
+        content: <img src='/images/cakes/ruffle cake black background.png' alt="Ruffle Cake" />
       },
       {
         key: 1,
-        content: <img src={teaOnLinen} alt="Cup of tea" />
+        content: <img src='/images/cafe/tea on linen resized.png' alt="Cup of tea" />
       },
       {
         key: 2,
-        content: <img src={cookies} alt="Dog sugar cookies" />
+        content: <img src='/images/cookies/doggie cookies.jpeg' alt="Dog sugar cookies" />
       },
       {
         key: 3,
-        content: <img src={circleOfDrinks} alt="Cups of coffee and tea" />
+        content: <img src='/images/cafe/circle of drinks cropped.png' alt="Cups of coffee and tea" />
       }
     ].map((slide, index) => {
       return { ...slide, onClick: () => this.setState({ goToSlide: index }) };
