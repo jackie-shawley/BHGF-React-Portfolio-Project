@@ -4,6 +4,10 @@ import './App.css';
 import { BrowserRouter } from 'react-router-dom';
 import { PicturesData } from './components/Ingredients/PicturesData';
 import Ingredients from './components/Ingredients/IngredientsComponent';
+import Map from './components/MapComponent';
+
+
+
 
 
 export default class App extends Component {
@@ -13,6 +17,7 @@ export default class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Main />
+          
         </div>
       </BrowserRouter>
     );

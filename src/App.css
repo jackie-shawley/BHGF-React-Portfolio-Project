@@ -170,9 +170,11 @@ p {
     color: black;
     text-shadow: 1px 1px #1af5c3;
     font-size: 1rem; }
+
   #map {
-    width: 50%;
-    height: 50%; }
+    margin-bottom: 50px;;
+    
+  }
 
   .col-form-label {
     text-align: left; } 

@@ -61,7 +61,6 @@ class Ingredients extends Component {
                     </div>
                 </div>
                 <div>
-                    <IngredientsAccordion />  
                 </div> 
                 <div className="row">
                     <div className="col-md-4">
