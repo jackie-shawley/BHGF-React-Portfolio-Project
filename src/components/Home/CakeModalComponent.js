@@ -9,10 +9,11 @@ class CakeModal extends Component {
             <Modal isOpen={this.props.isCakesModalOpen} toggle={this.props.toggleCakesModal}>
                 <ModalHeader toggle={this.props.toggleCakesModal} style={{text: 'center'}}>Cakes for Any Occasion</ModalHeader>
                 <ModalBody>
-                    <Card className='text-centered'>
+                    <Card className='text-centered'id='modalCard'>
                         <Card.Img variant='top' src='/images/cakes/rose cake.jpeg' alt='Rose Cake' style={{ height: 'auto', width: 'auto'}} />
                             <Card.Body>
-                                <Card.Title>Cake with Buttercream Rose Design</Card.Title>
+                                <Card.Title>Layer Cakes, Sheet Cakes...whatever your heart desires</Card.Title>
+                                <hr />
                                 <Card.Text>
                                     <p>Soft and sweet, our cakes can be custom-made to suit your dietary needs, and decorated to please your creative heart. Pick up a cake from the bakery case, or order one for your special occasion today!</p>
                                 </Card.Text>

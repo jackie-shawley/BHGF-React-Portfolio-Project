@@ -7,12 +7,13 @@ class CafeModal extends Component {
     render()  {  
         return(
             <Modal isOpen={this.props.isCafeModalOpen} toggle={this.props.toggleCafeModal}>
-                <ModalHeader toggle={this.props.toggleCafeModal} style={{text: 'center'}}>Have a cuppa</ModalHeader>
+                <ModalHeader toggle={this.props.toggleCafeModal} style={{text: 'center'}} id='homepageModalHeader'>Have a cuppa</ModalHeader>
                 <ModalBody>
-                    <Card className='text-centered'>
+                    <Card className='text-centered'id='modalCard'>
                         <Card.Img variant='top' src='/images/cafe/tea milk bottles.jpeg' alt='Tea in milk bottles' style={{ height: 'auto', width: 'auto'}} />
                             <Card.Body>
                                 <Card.Title>Organic Tea and Fairtrade Coffee for the healthiest you</Card.Title>
+                                <hr />
                                 <Card.Text>
                                     <p>Come in to our cafe and have a choose from our carefully curated selection of organic loose-leaf teas, or try a cup of our shade-grown, fairtrade, locally-roasted coffee. Stay and relax, or take one to go.</p>
                                 </Card.Text>

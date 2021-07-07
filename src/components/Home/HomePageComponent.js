@@ -62,6 +62,7 @@ class HomePage extends Component {
                             onClick={this.toggleCakesModal}
                             className='img-thumbnail'
                         />
+                        <h5 onClick={this.toggleCafeModal}>Custom Cakes</h5>        
                     </Col>
                     <Col md={4}>
                         <img 
@@ -71,6 +72,7 @@ class HomePage extends Component {
                             onClick={this.toggleCafeModal}
                             className='img-thumbnail'
                         />
+                        <h5 onClick={this.toggleCafeModal}>Organic Teas and Coffee</h5>
                     </Col>
                     <Col md={4}>
                         <img 
@@ -80,11 +82,15 @@ class HomePage extends Component {
                             onClick={this.toggleCookiesModal}
                             className='img-thumbnail'
                         />
+                        <h5 onClick={this.toggleCafeModal}>Hand-Decorated Cookies</h5>
                     </Col>
                 </Row>
                     <CakeModal isCakesModalOpen={this.state.isCakesModalOpen} toggleCakesModal={this.toggleCakesModal} />
                     <CafeModal isCafeModalOpen={this.state.isCafeModalOpen} toggleCafeModal={this.toggleCafeModal} />
                     <CookiesModal isCookiesModalOpen={this.state.isCookiesModalOpen} toggleCookiesModal={this.toggleCookiesModal} />
+
+                <br />
+                <hr id="thinHR" className="mx-auto"></hr>
                 
                 <div className='container container-fluid'>              
                     <div className='row-content'>
@@ -98,4 +104,4 @@ class HomePage extends Component {
     }       
 }
 
-export default HomePage; 
+export default HomePage;  

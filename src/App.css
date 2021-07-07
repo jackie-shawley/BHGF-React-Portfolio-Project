@@ -230,11 +230,17 @@ a, a:hover {
 
 .card-header {
   border-color: #1af5c3;
-  border-width: 5px; }
+  border-width: 5px;
+  text-align: center;
+}
+.card-title {
+  text-align: center;
+}
 
 .card-footer {
   border-color: #1af5c3;
   border-width: 5px; }
+
 
 .ul li {
   font-family: "rokkit", serif;
@@ -310,10 +316,7 @@ p span {
   margin-left: 75px;
   margin-right: 75px;
 }
-
  
-
-
 .row-content-menu {
   padding: 25px 0;
   min-height: 200px; }
