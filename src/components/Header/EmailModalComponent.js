@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {  Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Input } from 'reactstrap';
+import {  Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Input } from 'reactstrap';
 
 class EmailModal extends Component {
     constructor(props) {

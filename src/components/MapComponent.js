@@ -19,8 +19,19 @@ const GoogleMap = () => {
                         lat: 34.194096488174075, 
                         lng: -77.806217628262
                     }}
-                />
-                
+                />          
+            </div>
+            <div className='col-md-5 align-self-center'>
+                <p>708 S Lumina Ave <br />
+                Wrightsville Beach, NC 28480 <br />
+                <a role="button" className="btn btn-link btn-lg"  href="tel:+9876543210">(987)867-5309</a><br />
+                <a role="button" className="btn btn-link btn-lg pl-0" href="mailto:behappilyglutenfree@gmail.com">behappilyglutenfree@gmail.com</a></p><br />
+                <p class="text-center">Connect with us on social media for lots of yummy pictures and yummy sales!</p>
+                <div class="col text-center">
+                    <a className="btn btn-social-icon btn-instagram ml-1 mr-1 ml-md-3 mr-md-3" target="_blank" href="http://instagram.com/"><i className="fa fa-instagram"></i></a>{' '}
+                    <a className="btn btn-social-icon btn-facebook ml-1 mr-1 ml-md-3 mr-md-3" target="_blank" href="http://facebook.com/"><i className="fa fa-facebook"></i></a>{' '}
+                    <a className="btn btn-social-icon btn-twitter ml-1 mr-1 ml-md-3 mr-md-3" target="_blank" href="http://twitter.com/"><i className="fa fa-twitter"></i></a>{' '} 
+                </div>
             </div>
         </div>
     )
