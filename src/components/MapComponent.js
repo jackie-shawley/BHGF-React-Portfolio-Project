@@ -11,7 +11,7 @@ import locationIcon from 'iconify'
 const GoogleMap = () => {
     return (
         <div className="row w-100">
-            <div className="col-md-6 offset-1 text-center" style={{ width: '60%', height: '550px'}}>
+            <div className="col-md-6 offset-1 text-center" style={{ width: '60%', height: '550px'}} id='map'>
                 <Map
                     bootstrapURLKeys={{ key: 'AIzaSyAzBBg-SKhxXCRpICNZ58OcJyy0DzssZZg' }}
                     defaultZoom={13}
