@@ -5,6 +5,7 @@ import CakeModal from './CakeModalComponent';
 import CafeModal from './CafeModalComponent';
 import CookiesModal from './CookiesModalComponent';
 import { Row, Col } from 'react-bootstrap';
+import { Reviews } from './ReviewsComponent';
 
 
 class HomePage extends Component {
@@ -89,6 +90,12 @@ class HomePage extends Component {
                     <CafeModal isCafeModalOpen={this.state.isCafeModalOpen} toggleCafeModal={this.toggleCafeModal} />
                     <CookiesModal isCookiesModalOpen={this.state.isCookiesModalOpen} toggleCookiesModal={this.toggleCookiesModal} />
 
+                <br />
+                <hr id="thinHR" className="mx-auto"></hr>
+
+                <Row className='rowContent'>
+                    <Reviews />
+                </Row>
                 <br />
                 <hr id="thinHR" className="mx-auto"></hr>
                 

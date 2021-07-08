@@ -1,10 +1,5 @@
 import React from 'react';
 import Map from 'google-map-react';
-import  { Marker } from 'react-google-maps';
-import { Icon } from 'iconify';
-import locationIcon from 'iconify'
-
-
 
 
 

@@ -40,16 +40,16 @@ export default class NewCarousel extends Component {
   
     render() {
       return (
-        <div style={{ width: "80%", height: "500px", margin: "50px auto" }}>
-          <Carousel
-            slides={this.slides}
-            goToSlide={this.state.goToSlide}
-            offsetRadius={this.state.offsetRadius}
-            showNavigation={this.state.showNavigation}
-            animationConfig={this.state.config}
-          />
-         
-        </div>
+
+          <div style={{ width: "80%", height: "500px", margin: "50px auto" }}>
+            <Carousel
+              slides={this.slides}
+              goToSlide={this.state.goToSlide}
+              offsetRadius={this.state.offsetRadius}
+              showNavigation={this.state.showNavigation}
+              animationConfig={this.state.config}
+            />
+          </div>
       );
     }
   }

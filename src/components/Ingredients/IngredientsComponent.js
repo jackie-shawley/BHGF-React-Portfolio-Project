@@ -1,18 +1,30 @@
 import React, { Component, useState } from 'react';
-import { Card, CardImg, CardImgOverlay, CardFooter,CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Card, CardImg, CardImgOverlay, CardFooter,CardTitle, Breadcrumb, BreadcrumbItem, CardBody } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import AllergenWarningModal from './AllergenWarningModalComponent';
 import IngredientsAccordion from './IngredientsAccordionComponent';
-import { PicturesData } from './PicturesData'
+import { PicturesData } from './PicturesData';
+import { Collapse } from 'react-bootstrap';
+import { AccordionData } from './AccordionData';
+
 
 
 function RenderPhoto({ picture }) {
+    const [open, setOpen] = useState(false);
+
     return (
         <Card>
-            <Link to={`/photos/${picture.id}`}>
-                <CardImg  src={picture.image} alt={picture.name} />
-                    <CardFooter>{picture.name}</CardFooter>               
-            </Link>
+            <CardImg top src={picture.image} alt={picture.name} onClick={() => setOpen(!open)} />
+            <Collapse in={open}>
+                <div>
+                    <CardBody>
+                        <div>
+                            {picture.description}
+                        </div>
+                    </CardBody>
+                </div>
+            </Collapse>
+            <CardFooter>{picture.name}</CardFooter>
         </Card>
     );
 }
@@ -22,7 +34,8 @@ class Ingredients extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            pictures: PicturesData
+            pictures: PicturesData,
+            ingredients: AccordionData
         };
     }
 
@@ -60,9 +73,17 @@ class Ingredients extends Component {
                         {photos[2]}
                     </div>
                 </div>
-                <div>
-                    {/* <IngredientsAccordion /> */}
-                </div> 
+                <br />
+                <h2 style={{textAlign: 'center'}}>Ingredients</h2>
+                <hr id="thinHR" className="mx-auto"></hr>
+                <br />
+                <div className='col-md-10' style={{alignSelf: 'center'}}>
+                    <IngredientsAccordion ingredients={this.state.ingredients} />
+                </div>
+                <br />
+                <hr id="thinHR" className="mx-auto"></hr>
+                <br />
+                <br />
                 <div className="row">
                     <div className="col-md-4">
                         {photos[3]}

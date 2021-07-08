@@ -37,8 +37,6 @@
   }
 }
 
-
-
 body {
   font-family: "rokkitt", serif;
   background-color: rgba(26, 245, 195, 0.25); }
@@ -241,6 +239,10 @@ a, a:hover {
   border-color: #1af5c3;
   border-width: 5px; }
 
+  #cardDeck {
+    margin-left: 165px;
+    align-content: center;
+  }
 
 .ul li {
   font-family: "rokkit", serif;
