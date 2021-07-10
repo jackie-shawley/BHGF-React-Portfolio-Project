@@ -23,6 +23,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
     "react-spring-3d-carousel": "^1.2.1",
+    "react-transition-group": "4.4.1",
     "reactstrap": "8.5.1",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.0.3",

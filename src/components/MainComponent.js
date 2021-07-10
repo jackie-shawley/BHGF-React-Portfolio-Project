@@ -7,26 +7,32 @@ import Contact from './ContactComponent';
 import AboutUs from './AboutComponent';
 import Menu from './MenuComponent';
 import Footer from './FooterComponent';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import { useLocation } from 'react-router-dom';
 
 
-
-
-export default class Main extends Component {
-    render () {
+export default function Main () {
+   
+        const location = useLocation()
+        
         return (
             <div>
                 <Header />
-                <Switch>
-                    <Route exact path='/home' component={HomePage} />
-                    <Route exact path='/menu' component={Menu} />
-                    <Route exact path='/ingredients' component={Ingredients} />
-                    <Route exact path='/aboutus' component={AboutUs} />
-                    <Route exact path='/contact' component={Contact} />
-                    <Redirect to='/home' />
-                </Switch>
+                    <TransitionGroup>
+                        <CSSTransition key={location.key} classNames='fade' timeout={300}>
+                            <Switch location={location}>
+                                <Route exact path='/home' component={HomePage} />
+                                <Route exact path='/menu' component={Menu} />
+                                <Route exact path='/ingredients' component={Ingredients} />
+                                <Route exact path='/aboutus' component={AboutUs} />
+                                <Route exact path='/contact' component={Contact} />
+                                <Redirect to='/home' />
+                            </Switch>
+                        </CSSTransition>
+                    </TransitionGroup>
                 <Footer />
             </div>
         );
     }
-}
+
 
