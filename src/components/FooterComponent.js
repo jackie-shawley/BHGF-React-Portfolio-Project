@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
 export default function Footer(props) {
@@ -11,9 +11,9 @@ export default function Footer(props) {
                         <div className='col-6'>
                             <h5 className='mb-3'>Let's Be Friends</h5>
                             <br />
-                            <a className="btn btn-social-icon btn-instagram ml-1 mr-1 ml-md-3 mr-md-3" target="_blank" href="http://instagram.com/"><i className="fa fa-instagram"></i></a>{' '}
-                            <a className="btn btn-social-icon btn-facebook ml-1 mr-1 ml-md-3 mr-md-3" target="_blank" href="http://facebook.com/"><i className="fa fa-facebook"></i></a>{' '}
-                            <a className="btn btn-social-icon btn-twitter ml-1 mr-1 ml-md-3 mr-md-3" target="_blank" href="http://twitter.com/"><i className="fa fa-twitter"></i></a>{' '} 
+                            <a className="btn btn-social-icon btn-instagram ml-1 mr-1 ml-md-3 mr-md-3" target="_blank" href="http://instagram.com/" rel="noreferrer"><i className="fa fa-instagram"></i></a>{' '}
+                            <a className="btn btn-social-icon btn-facebook ml-1 mr-1 ml-md-3 mr-md-3" target="_blank" href="http://facebook.com/" rel="noreferrer"><i className="fa fa-facebook"></i></a>{' '}
+                            <a className="btn btn-social-icon btn-twitter ml-1 mr-1 ml-md-3 mr-md-3" target="_blank" href="http://twitter.com/" rel="noreferrer"><i className="fa fa-twitter"></i></a>{' '} 
                         </div>
                         <div className="col-6">
                         <h5><a href="contact.html">Contact Us</a></h5>

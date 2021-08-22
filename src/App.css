@@ -360,3 +360,11 @@ p span {
    opacity: 0;
    transition: opacity 500ms ease-in;
  }
+ .ingredPhoto {
+    width: 'auto'
+ }
+ .ingredPhoto:hover {
+   transform: scale(1.05);
+   transition: 0.4s ease-in-out ;
+   
+ }

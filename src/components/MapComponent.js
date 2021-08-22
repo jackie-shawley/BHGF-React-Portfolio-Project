@@ -23,9 +23,9 @@ const GoogleMap = () => {
                 <a role="button" className="btn btn-link btn-lg pl-0" href="mailto:behappilyglutenfree@gmail.com">behappilyglutenfree@gmail.com</a></p><br />
                 <p class="text-center">Connect with us on social media for lots of yummy pictures and yummy sales!</p>
                 <div class="col text-center">
-                    <a className="btn btn-social-icon btn-instagram ml-1 mr-1 ml-md-3 mr-md-3" target="_blank" href="http://instagram.com/"><i className="fa fa-instagram"></i></a>{' '}
-                    <a className="btn btn-social-icon btn-facebook ml-1 mr-1 ml-md-3 mr-md-3" target="_blank" href="http://facebook.com/"><i className="fa fa-facebook"></i></a>{' '}
-                    <a className="btn btn-social-icon btn-twitter ml-1 mr-1 ml-md-3 mr-md-3" target="_blank" href="http://twitter.com/"><i className="fa fa-twitter"></i></a>{' '} 
+                    <a className="btn btn-social-icon btn-instagram ml-1 mr-1 ml-md-3 mr-md-3" target="_blank" href="http://instagram.com/" rel="noreferrer"><i className="fa fa-instagram"></i></a>{' '}
+                    <a className="btn btn-social-icon btn-facebook ml-1 mr-1 ml-md-3 mr-md-3" target="_blank" href="http://facebook.com/" rel="noreferrer"><i className="fa fa-facebook"></i></a>{' '}
+                    <a className="btn btn-social-icon btn-twitter ml-1 mr-1 ml-md-3 mr-md-3" target="_blank" href="http://twitter.com/" rel="noreferrer"><i className="fa fa-twitter"></i></a>{' '} 
                 </div>
             </div>
         </div>

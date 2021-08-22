@@ -190,7 +190,7 @@ function Menu(props) {
                     <div className="row">
                         <div className="col-12 col-md-8">                        
                             <h6>Banana Nut Crumble</h6>
-                            <p>A great big take on an old classNameic, topped with our special brown sugar crumble. </p>                       
+                            <p>A great big take on an old classic, topped with our special brown sugar crumble. </p>                       
                         </div>
                         <div className="col-12 col-md-4">                                    
                             <p className="text-right">Each..........$6.00</p>
@@ -398,7 +398,7 @@ function Menu(props) {
                             <br />                                                         
                             <p className="text-right">One Popsicle..........$4.00</p>
                         </div>
-                    </div>
+                    </div> " "
                     <hr />
                 </div>
             </div>

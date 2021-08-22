@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron, Modal, ModalHeader, ModalBody, Form, FormGroup, Input, Button } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
-import AboutUs from '../AboutComponent';
-
 
 
 export default class Header extends Component {
@@ -73,7 +71,7 @@ export default class Header extends Component {
                                 </a>                      
                             </div>
                             <div className="col-6  mt-5 mb-3 d-md-none text-left text-nowrap">
-                                <a role="button" id="button" className="btn btn-dark btn-sm" data-toggle="modal" data-target="#mailListModal">Join Our Email List!</a>
+                                <Button type='button' id='button' className='btn btn-dark btn-sm' onClick={this.toggleModal}>Join Our Email List!</Button>
                             </div>
                             <div className="col-6 col-md-3 text-right text-md-left pl-5 mt-5">
                                 <a role="button" id="button" className="btn btn-dark btn-sm" href="tel:+9876543210">Order Now</a>

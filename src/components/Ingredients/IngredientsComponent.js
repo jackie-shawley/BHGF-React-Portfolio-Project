@@ -1,5 +1,5 @@
 import React, { Component, useState } from 'react';
-import { Card, CardImg, CardImgOverlay, CardFooter,CardTitle, Breadcrumb, BreadcrumbItem, CardBody } from 'reactstrap';
+import { Card, CardImg, CardFooter, Breadcrumb, BreadcrumbItem, CardBody } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import AllergenWarningModal from './AllergenWarningModalComponent';
 import IngredientsAccordion from './IngredientsAccordionComponent';
@@ -63,13 +63,13 @@ class Ingredients extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-md-4 ingredPhoto" >
                         {photos[0]}
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 ingredPhoto">
                         {photos[1]}
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 ingredPhoto">
                         {photos[2]}
                     </div>
                 </div>
@@ -85,13 +85,13 @@ class Ingredients extends Component {
                 <br />
                 <br />
                 <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-md-4 ingredPhoto">
                         {photos[3]}
                     </div>
                     <div className="col-md-4">
                         {photos[4]}
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 ingredPhoto">
                         {photos[5]}
                     </div>
                 </div>
