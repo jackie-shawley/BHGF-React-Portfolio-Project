@@ -66,7 +66,7 @@ export default class Header extends Component {
                                     </Modal>
                             </div>
                             <div className="col-12 col-md-6">
-                                <a href='/home'>
+                                <a href='./'>
                                     <img src='/images/logos etc/5 Be Happily Gluten Free Logo transparent.png' className="img-fluid mx-auto d-block" alt="Be Happily Gluten Free Logo" />
                                 </a>                      
                             </div>
