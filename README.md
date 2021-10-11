@@ -50,7 +50,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Be Happily Gluten Free Screen Shot](/bhgf/public/images/screen_shot.png "BHGF Home Page Screen Shot")
+![Be Happily Gluten Free Screen Shot](public/images/screen_shot.png "BHGF Home Page Screen Shot")
 
 `jackie-shawley`, `BHGF-React-Portfolio-Project`, `https://www.linkedin.com/in/jackie-kopco-shawley/`, `jackiekopcoshawley@gmail.com`, `Be Happily Gluten Free React Portfolio Project`
 
