@@ -13,6 +13,7 @@ class EmailModal extends Component {
         this.handleSignUp = this.handleSignUp.bind(this);
     }
 
+    //post to server in handleSignUp; use fetch API to do this
     handleSignUp(event) {
         alert(`Thanks ${this.firstname.value}, we appreciate you!`);
         this.toggleModal();
@@ -34,7 +35,7 @@ class EmailModal extends Component {
                     Stay up to date with our specials, sales and new yummy treats!
                     <Form onSubmit={this.handleSignUp}>
                         <FormGroup>
-                            <Input type="firstname" id="firstname" name="firstname" placeholder="First Name" innerRef={input => this.firstname = input}/>
+                            <Input type="firstname" id="firstname" name="firstname" placeholder="First Name" innerRef={input => this.firstname = input}/> 
                         </FormGroup>
                         <FormGroup>
                             <Input type="email" id="email" name="email" placeholder="Email Address" innerRef={input => this.email = input}/>
