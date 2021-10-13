@@ -13,6 +13,8 @@
     A website built for a fictional bakery and cafe as a portfolio project during my Nucamp computer coding bootcamp
     <br />
     <a href="https://github.com/jackie-shawley/BHGF-React-Portfolio-Project.git"><strong>Explore the docs »</strong></a>
+    <br>
+    <a href="https://be-happily-gluten-free-react.netlify.app/"><strong>Live Demo found at https://be-happily-gluten-free-react.netlify.app/</strong></a>
     <br />
  </p>
 </div>
